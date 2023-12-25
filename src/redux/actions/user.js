@@ -15,6 +15,7 @@ export const loadUser = () => async (dispatch) => {
       withCredentials: true,
       headers: {
         Authorization: `Bearer ${token}`,
+        "Access-Control-Allow-Origin": "*"
       },
     });
     dispatch({

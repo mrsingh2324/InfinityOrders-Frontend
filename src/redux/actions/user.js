@@ -16,11 +16,7 @@ export const loadUser = () => async (dispatch) => {
       headers: {
         Authorization: `Bearer ${token}`,
         Accept: 'application/json, text/plain, */*',
-        'Accept-Language': 'en-US,en;q=0.9',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'cross-site',
-        Origin: 'https://www.infinityorders.live',
-        Referer: 'https://www.infinityorders.live/',
+        'Accept-Language': 'en-US,en;q=0.9'
       },
     });
     dispatch({
